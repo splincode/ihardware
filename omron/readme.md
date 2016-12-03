@@ -246,6 +246,8 @@ sudo find . | grep libomron.so.0.9.0
 sudo bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/splincode/Develop/omron/c++_modules/libomron/omron-build/lib/
 ./omron_790IT_test
+# or
+# ~/Develop/omron/usr/local/bin/omron_790IT_test
 ```
 
 ```bash
