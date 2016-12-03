@@ -159,3 +159,35 @@ Install the project...
 -- Installing: /home/splincode/Develop/omron/usr/local/python/omron/omron_790IT_test.py
 
 ```
+
+5) Подключите USB и найдите устройство
+
+```bash
+lsusb
+```
+
+Результат:
+
+```bash
+Bus 004 Device 002: ID 04f2:b3f6 Chicony Electronics Co., Ltd HD WebCam (Acer)
+Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 005: ID 062a:4101 Creative Labs Wireless Keyboard/Mouse
+Bus 005 Device 003: ID 0590:0028 Omron Corp. HJ-720IT / HEM-7080IT-E / HEM-790IT
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+```
+
+или
+
+```bash
+lsusb | grep Omron
+```
+
+Результат:
+
+```bash
+Bus 005 Device 003: ID 0590:0028 Omron Corp. HJ-720IT / HEM-7080IT-E / HEM-790IT
+```
