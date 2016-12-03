@@ -266,5 +266,5 @@ AJR data count: 10
 04/12/2016 01:31:57 SYS: 117 DIA:  79 PULSE:  66
 Weekly info:
 Evening[0 27/11/2016] = sys:103 dia:72 pulse:69.
-Evening[1 31/12/2006] = sys:114 dia:71 pulse:90.
+Evening[1 31/12/2006] = sys:114 dia:71 pulse:90.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 ```
