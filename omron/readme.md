@@ -235,3 +235,33 @@ omron_720IT_csv_dump  omron_720IT_test  omron_790IT_test
 cd /
 sudo find . | grep libomron.so.0.9.0
 ```
+
+```bash
+./home/splincode/Develop/omron/c++_modules/libomron/omron-build/lib/
+```
+
+Поэтому пропишем путь к библиотеке в относительном пути
+
+```bash
+LD_LIBRARY_PATH=/usr/local/lib
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/splincode/Develop/omron/c++_modules/libomron/omron-build/lib/
+export LD_LIBRARY_PATH
+```
+
+```bash
+cd ~/Develop/omron/usr/local/bin/
+./omron_790IT_test
+```
+
+Однако, у нас не хватает прав
+
+```bash
+Found 1 omron 790ITs
+Cannot open omron 790IT!
+```
+
+Если запускать через sudo
+
+```bash
+error while loading shared libraries: libomron.so.0.9.0: cannot open shared object file: No such file or directory
+```
