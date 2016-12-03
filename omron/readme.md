@@ -209,3 +209,29 @@ ls -l $OMRON_DEV
 ```
 crw-rw-r-- 1 root root 189, 514 дек.   3 23:18 /dev/bus/usb/005/003
 ```
+
+8) Запускаем бинарник для считывания сохраненных значений с устройства (считывает последнее в памяти)
+
+```bash
+cd ~/Develop/omron/usr/local/bin/
+ls
+```
+
+```bash
+omron_720IT_csv_dump  omron_720IT_test  omron_790IT_test
+```
+
+```bash
+./omron_790IT_test
+```
+
+Но из-за проблем с путями, не может найти скомпилированные библиотеки
+
+```bash
+./omron_790IT_test: error while loading shared libraries: libomron.so.0.9.0: cannot open shared object file: No such file or directory
+```
+
+```bash
+cd /
+sudo find . | grep libomron.so.0.9.0
+```
