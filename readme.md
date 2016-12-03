@@ -2,6 +2,6 @@
 <h4>Интеграция с устройствами и управление через веб-интерфейс</h4>
 <ul>
 	<li>
-		<a href="https://github.com/splincode/ihardware/omron/">Тонометр ОМРОН</a>
+		<a href="https://github.com/splincode/ihardware/tree/master/omron">Тонометр ОМРОН</a>
 	</li>
 </ul>

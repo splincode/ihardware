@@ -1,4 +1,5 @@
 == Оригинальная документация ==
+
 [https://github.com/openyou/libomron/edit/master/README.asciidoc](https://github.com/openyou/libomron/edit/master/README.asciidoc)
 
 
@@ -16,8 +17,7 @@ _Pedometers_
 
 * CMake (Required on all platforms) - http://www.cmake.org
 * SWIG (For non-C libraries) - http://www.swig.org
-* Python (with dev libraries, for python lib) - http://www.python.org
-* libusb-1.0 (All non-windows platforms) - http://www.libusb.org
+* libusb-1.0 - http://www.libusb.org
 
 To build on Ubuntu, you can pull the following packages to build the
 project from source.
@@ -25,3 +25,18 @@ project from source.
 * libusb-1.0-0-dev
 * cmake
 * cmake-data
+
+ - git clone to ~/git/libomron # основной пакет
+ - build area in ~/opt/omron-build # собранный пакет
+ - install area in ~/opt/omron # файлы для установки
+
+1) Клонируем себе репозиторий https://github.com/openyou/libomron/
+
+ cd ~/Develop/omron/c++_modules
+ git clone https://github.com/openyou/libomron/
+ cd libomron
+
+2) Подтягиваем подмодули
+
+ git submodule update --init
+ 
